@@ -38,7 +38,7 @@ __version__ = '0.3.7'
 
 # Configure the root logger for the library
 logger_format_string = '[%(levelname)s] %(message)s in File "%(pathname)s", line %(lineno)d, in %(funcName)s'
-logging.basicConfig(format=logger_format_string, level=logging.INFO)
+logging.basicConfig(format=logger_format_string, level=logging.INFO, filename='flask_fixtures.log')
 log = logging.getLogger(__name__)
 
 
